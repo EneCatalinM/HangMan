@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  background: url("https://images.unsplash.com/photo-1544526086-43ae87382eb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.hangman {
+  max-width: 700px;
+  background: #252532;
+  opacity: 0.9;
+  height: 80vh;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+.hangman__title {
+  padding: 1rem;
+  color: #fa9d21;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hangman__newGame {
+  padding: 1rem 2rem;
+  border: 2px solid #fa9d21;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  width: 30%;
+  margin: 1rem auto;
+  transition: 1s all ease;
+}
+.hangman__newGame:hover {
+  background: #fa9d21;
+  border: 2px solid white;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+.hangman__howToPlay {
+  padding: 1rem 2rem;
+  border: 2px solid #fa9d21;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  width: 30%;
+  margin: 0 auto;
+  transition: 1s all ease;
+}
+.hangman__howToPlay:hover {
+  background: #fa9d21;
+  border: 2px solid white;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+.hangman__stats {
+  color: white;
+  text-align: start;
+  margin: 1rem;
+}
+.hangman__board {
+  border: 3px dashed white;
+  margin: 0 auto;
+}
+.hangman__word {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+  margin: 1rem;
+  margin: 0 auto;
+}
+.hangman__instructions {
+  color: white;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-left: 2rem;
+}
+.hangman__letter {
+  color: white;
+  list-style-type: none;
+  border: 1px solid white;
+  font-size: 2rem;
+  height: 40px;
+  width: 40px;
+  margin: 0.2rem 0.4rem;
+  transition: 0.5s all ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hangman__letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 700px;
+}
+.hangman__letter:hover {
+  background: #fa9d21;
+  transform: scale(1.1);
+}
+.hangman__trigger {
+  padding: 1rem 2rem;
+  border: 2px solid #fa9d21;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  width: 30%;
+  margin: 1rem auto;
+  transition: 1s all ease;
+}
+.hangman__trigger:hover {
+  background: #fa9d21;
+  border: 2px solid white;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+.hangman__letter--active {
+  background: black;
+  color: #fa9d21;
+}
+.result {
+  font-size: 2rem;
+  color: white;
+  margin: 1rem auto;
+  text-align: center;
+}
+.hangman__instructions__game {
+  color: #fa9d21;
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .hangman__instructions {
+    font-size: 1.2rem;
+    margin: 0.4rem;
+  }
+  .hangman__trigger,
+  .hangman__newGame,
+  .hangman__howToPlay {
+    width: 50%;
+  }
+  .hangman__letter {
+    color: white;
+    list-style-type: none;
+    border: 1px solid white;
+    font-size: 1.5rem;
+    height: 30px;
+    width: 30px;
+    margin: 0.1rem 0.2rem;
+  }
+  .hangman__instructions__game {
+    font-size: 1.5rem;
+  }
+  .hangman {
+    height: 100vh;
+  }
+}
